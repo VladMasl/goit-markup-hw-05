@@ -22,11 +22,11 @@
       <nav class="main-nav">
         <a href="" class="logo"><span class="web">Web</span>Studio</a>
         <ul class="site-nav list">
-          <li class="item"><a href="./index.html" class="link current">Студия</a></li>
+          <li class="item"><a href="./index.html" class="link current menu-link">Студия</a></li>
           <li class="item">
-            <a href="./portfolio.html" class="link">Портфолио</a>
+            <a href="./portfolio.html" class="link menu-link">Портфолио</a>
           </li>
-          <li class="item"><a href="" class="link">Контакты</a></li>
+          <li class="item"><a href="" class="link menu-link">Контакты</a></li>
         </ul>
       </nav>
 
@@ -47,7 +47,7 @@
       </ul>
     </div>
   </header>
-  <main>
+  <main class="tester">
     <!-- шапка -->
 
     <section class="heroes">
@@ -57,12 +57,12 @@
           для вашего бизнеса
         </h1>
 
-        <button type="button" class="button primary button-man">
+        <button type="button" class="button primary button-man" data-modal-open>
           Заказать услугу
         </button>
       </div>
     </section>
-
+   
     <!-- особенности -->
     <section class="section">
       <div class="container">
@@ -129,15 +129,27 @@
         <h2 class="section-work">Чем мы занимаемся</h2>
         <ul class="work list">
           <li class="work-img">
-            <img src="images/box1.jpg" alt="процес работы" width="370" />
-          </li>
+           <div class="work-img-text">
+             <img src="images/box1.jpg" alt="процес работы" width="370" />
+          
+           <div class="imj-text-fon"><p class="img-text">Десктопные приложения</p></div>
+          </div> 
+           </li>
 
           <li class="work-img">
-            <img src="images/bo2.jpg" alt="процес работы" width="370" />
-          </li>
+           <div class="work-img-text"> 
+             <img src="images/bo2.jpg" alt="процес работы" width="370" />
+        
+            <div class="imj-text-fon"><p class="img-text">Мобильные приложения</p></div>
+          </div>
+           </li>
 
           <li class="work-img">
-            <img src="images/bo3.jpg" alt="процес работы" width="370" />
+            <div class="work-img-text">
+              <img src="images/bo3.jpg" alt="процес работы" width="370" />
+          
+            <div class="imj-text-fon"><p class="img-text">Дизайнерские решения</p></div>
+          </div>
           </li>
         </ul>
       </div>
@@ -321,7 +333,7 @@
       <ul class="box-clients">
         <li class="clients">
           <a href="" class="clients-group">
-            <svg  width="41px" height="46.7px" class="customers ">
+            <svg width="41px" height="46.7px" class="customers ">
               <use href="./images/icons.svg.svg#icon-group"></use>
             </svg>
           </a>
@@ -418,10 +430,18 @@
           </li>
         </ul>
       </div>
-
-
     </div>
   </footer>
+  <!-- модальное окно -->
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button type="button" class="modal-close" data-modal-close>
+        <svg width="11px" height="11px">
+          <use href="./images/icons.svg.svg#icon-buttonx"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <script src="./js/modal.js"></script>
 </body>
-
 </html>
