@@ -18,7 +18,7 @@
   --portfolio-project-color: rgba(238, 238, 238, 1);
   --primary-icon-fill: rgba(175, 177, 184, 1);
   --primary-cards-color: rgba(33, 150, 243, 0.9);
-  --transition: 2050ms; 
+  --transition: 250ms; 
 }
 
 html {
